@@ -1,0 +1,4 @@
+name: TPDoubleJump
+version: '1.0'
+main: me.titanet.kmdangelo.tPDoubleJump.TPDoubleJump
+api-version: '1.21'
