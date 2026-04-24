@@ -2,3 +2,13 @@ name: TPDoubleJump
 version: '1.0'
 main: me.titanet.kmdangelo.tPDoubleJump.TPDoubleJump
 api-version: '1.21'
+commands:
+  seeConfig:
+    description: ComandoTest
+    usage: /seeConfig
+  fly:
+    description: Toggle sender fly
+    usage: /fly
+  tempFly:
+    description: Assign a temporary fly to the player
+    usage: /tempfly

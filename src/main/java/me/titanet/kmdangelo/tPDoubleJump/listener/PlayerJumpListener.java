@@ -46,6 +46,7 @@ public class PlayerJumpListener implements Listener {
 
     @EventHandler
     public void ShiftClickEvent(PlayerToggleSneakEvent e) {
+        if (e.getPlayer().isFlying()) return;
         Vector velocity = e.getPlayer().getLocation().getDirection().normalize().multiply(.2);
         if (plugin.getJumpingPlayers().get(e.getPlayer().getUniqueId()) != null) {
             if (e.isSneaking()) {
@@ -58,10 +59,5 @@ public class PlayerJumpListener implements Listener {
                 e.getPlayer().setVelocity(velocity);
             }
         }
-    }
-
-    @EventHandler
-    public void TryFlyEvent(PlayerToggleFlightEvent e) {
-        e.getPlayer().sendMessage("ciao");
     }
 }
